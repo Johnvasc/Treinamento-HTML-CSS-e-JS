@@ -1,8 +1,11 @@
 # O conteúdo:
 
 Uma capacitação focada HTML, CSS e JS focada nos seguintes pontos:
+
 HTML - Principais tags e utilização da IDE, ID's e classes.
+
 CSS - Display flex e grid e personalização no geral.
+
 JS - DOM e Receber dados de uma API.
 
 # Objetivos:
