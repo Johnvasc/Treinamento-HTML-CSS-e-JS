@@ -44,7 +44,7 @@ Antes:![image](https://user-images.githubusercontent.com/39773960/218128611-e32f
 
   Agora vamos usar a opção display: grid para distribuir as grids onde vão estar os pokemons. O display:grid funciona de maneira muito parecida com o flex, porém tem suas diferenças que vão ser fundamentais.
   1) Vamos colocar um ID na div externa que abriga as outras seis: `id="pkmnContainer"`. Em seguida, vamos excluir as seis divs internas.
-  2) Vamos refazer as seis divs internas todas com a classe pkmnDiv. Para fazer isso de maneira rápida faça: `div.pkmnDiv*6`, repare que o . se refere a classe, podeíamos usar `div#pkmnDiv` para criar uma div com o ID: "pkmnDiv". Vamos ter:
+  2) Vamos refazer as seis divs internas todas com a classe pkmnDiv. Para fazer isso de maneira rápida faça: `div.pkmnDiv*6`, repare que o . se refere a classe, poderíamos usar `div#pkmnDiv` para criar uma div com o ID: "pkmnDiv". Vamos ter:
   
   ![image](https://user-images.githubusercontent.com/39773960/218184095-ef92e89c-593c-40a0-81e7-ee7bfc398922.png)
 
