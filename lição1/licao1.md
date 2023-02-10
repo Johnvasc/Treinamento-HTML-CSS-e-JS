@@ -14,6 +14,7 @@ Uma vez que você instalou o VScode siga os seguintes passos:
 2) Em seguida clique com o botão direito do seu mouse e coloque a opção abrir com VScode conforme a imagem abaixo:
 ![image](https://user-images.githubusercontent.com/39773960/218003188-84f525d9-d2b4-42a0-9aff-204165c1e29b.png)
 3) Clique em extenções e instale a extensão "Live Server":
+
 ![image](https://user-images.githubusercontent.com/39773960/218003414-d43f41f1-6e98-4bd7-bac8-3b5323efa95b.png)
 
 #Nosso HTML!
