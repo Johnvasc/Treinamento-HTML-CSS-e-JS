@@ -30,6 +30,32 @@
   Vamos ver um pequeno exemplo:
   1) const mainContainer = document.getElementById('pkmnContainer') /// getElementById procura no HTML um elemento com a Id especificada dentro dos parenteses. Estamos guardando esse resultado numa constante chamada mainContainer.
   2) mainContainer.style.backgroundColor = 'yellow' ///Estamos dizendo que a propriedade style da div vai receber um backgroundColor amarelo. Salve o js e dê uma olhada na página da web!
+  3) Certo, agora apague esse segundo comando.
+  4) Vamos agora criar uma div dinamicamente!
+  5) const newDiv = document.createElement('div') ///Estamos criando um novo elemento e armazenando nessa const.
+  6) const newTitle = document.createElement('h2') ///Criamos um elemento do tipo h2 e armazenamos.
+  7) newTitle.innerText = 'Sou um título' ///Estamos colocando um texto para esse h2!
+  8) newDiv.appendChild(newTitle) ///Estamos jogando o h2 dentro da nossa novaDiv
+  9) mainContainer.appendChild(newDiv) ///Estamos jogando a nova div dentro.
+  10) Pronto, colocamos uma div dentro da nossa div principal, mas eu disse que colocaríamos 500, não é? Vamos começar por colocar 25 divs!
+  11) tudo e coloque no lugar:
   
+  const mainContainer = document.getElementById('pkmnContainer')
+  
+  for(let i = 0; i<25; i++){
+  
+    const newDiv = document.createElement('div')
+    
+    newDiv.classList.add('pkmnDiv') ///adiciona uma classe entre paranteses ao elemento.
+    
+    const newTitle = document.createElement('h2')
+    
+    newTitle.innerText = i+1
+    
+    newDiv.appendChild(newTitle)
+    
+    mainContainer.appendChild(newDiv)
+    
+   }
   
   
