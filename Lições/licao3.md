@@ -21,7 +21,7 @@
  até que display e button fiquem parecidos com da imagem guia, repare que o texto _justify-content:_ vai mudando de acordo com o que você clica. Copie o comando e cole no div{}, lembrando de colocar um ; no final.
   Salve o documento CSS (lembre-se sempre do atalho: `ctrl + S`) e recarregue a página e aperte `F12` para tirar a janela de desenvolvedor do chrome. Se deu tudo certo, o botão e o input agora estão centralizados e espaçados corretamente!
   
-## Um pouco de id:
+## Um pouco de id e classes:
 
   Agora vamos criar as divs que vão abrigar nossos pokemons. Como pode ver, são várias linhas com três divs cada.
   
@@ -36,5 +36,19 @@
 
 Antes:![image](https://user-images.githubusercontent.com/39773960/218128611-e32f86db-1773-485d-98e8-13993b973191.png)
  Depois: ![image](https://user-images.githubusercontent.com/39773960/218128505-2f335964-e420-4cf7-90d5-dc28ba896b09.png)
+ 
+  9) Classes funcionam de maneira parecida ao ID, só que são mais genéricas. Um ID deve ser endereçado a uma única tag, enquanto uma classe pode abrigar várias. Por exemplo, já definimos o estilo do nosso botão, mas e se fossemos fazer um botão de cancelar que aparecesse em várias partes do site? Então poderíamos usar a mesma classe para todos e fazer uma única classe chamada botaoCancelar.
+  10) Para personalizar uma classe no css use . e nome da classe, por exemplo: `.cancelButton{}`
 
 ## Display: grid.
+
+  Agora vamos usar a opção display: grid para distribuir as grids onde vão estar os pokemons. O display:grid funciona de maneira muito parecida com o flex, porém tem suas diferenças que vão ser fundamentais.
+  1) Vamos colocar um ID na div externa que abriga as outras seis: `id="pkmnContainer"`. Em seguida, vamos excluir as seis divs internas.
+  2) Vamos refazer as seis divs internas todas com a classe pkmnDiv. Para fazer isso de maneira rápida faça: `div.pkmnDiv*6`, repare que o . se refere a classe, podeíamos usar `div#pkmnDiv` para criar uma div com o ID: "pkmnDiv". Vamos ter:
+  
+  ![image](https://user-images.githubusercontent.com/39773960/218184095-ef92e89c-593c-40a0-81e7-ee7bfc398922.png)
+
+  3) Coloque um texto qualquer entre as tags das divs para elas se tornarem visíveis e vamos para o CSS. Aplique o seguinte código ao id "pkmnContainer": `display:grid`. Salve a página e observe ela na web.
+  4) Agora aplique abaixo de display:grid o seguinte código: `grid-template-columns: 25% 25% 25% 25%;`, estamos dizendo que queremos colocar nossas divs em quatro colunas que ocupam cada 25% da largura da tela.
+  5) Pressione F12 e centralize as divs igualmente feito com display:flex.
+  6) Repare que temos 4 colunas, mas na imagem guia temos somente três, vamos a um exemplo em que temos somente duas: `grid-template-columns: 30% 30%;`.
