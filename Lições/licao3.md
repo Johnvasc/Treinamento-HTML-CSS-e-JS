@@ -13,7 +13,7 @@
 
   1) Clique em Elements (sublinhado em vermelho), pode ser que você já venha nele.
   2) Clique no ícone com um quadrado e uma seta (sublinhado em roxo). Ele é o selecionador de tags, quando você clica nele, você seleciona a tag que você clicar para poder editá-la no navegador. Navegue até nossa div em azul e tracejado e clique nela.
-  3) Clique no botão ao lado de display:flex (sublinhado em roxo). A seguinte janela apareceu:
+  3) Clique no botão ao lado de display:flex (sublinhado em verde). A seguinte janela apareceu:
  
  ![image](https://user-images.githubusercontent.com/39773960/218122973-5ada4b9b-ecc2-4696-a197-574c0c80c23d.png)
 
