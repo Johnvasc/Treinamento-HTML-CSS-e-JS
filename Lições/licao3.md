@@ -52,3 +52,6 @@ Antes:![image](https://user-images.githubusercontent.com/39773960/218128611-e32f
   4) Agora aplique abaixo de display:grid o seguinte código: `grid-template-columns: 25% 25% 25% 25%;`, estamos dizendo que queremos colocar nossas divs em quatro colunas que ocupam cada 25% da largura da tela.
   5) Pressione F12 e centralize as divs igualmente feito com display:flex.
   6) Repare que temos 4 colunas, mas na imagem guia temos somente três, vamos a um exemplo em que temos somente duas: `grid-template-columns: 30% 30%;`.
+
+## Tarefa de casa:
+ Para continuar treinando o display:flex jogue esse joguinho: https://flexboxfroggy.com/#pt-br e tente passar alguns níveis. Ele é divertido e me ajudou quando estava aprendendo :P
