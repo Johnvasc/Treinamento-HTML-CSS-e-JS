@@ -40,7 +40,7 @@ Repare que esse é o data que pedimos para printar no console na linha 9. Observ
 
 ## Interpolação no JS:
 
-Como vimos acima, o id do pikachu é 25, agora note o url que mandamos para o fetch: https://pokeapi.co/api/v2/pokemon/25. Sim, teremos como retorno o pokemon cujo número esta inserido no final. Mas queremos todos os pokemons, como podemos fazer? Que tal:
+Como vimos acima, o id do pikachu é 25, agora note o url que mandamos para o fetch: https://pokeapi.co/api/v2/pokemon/25. Podemos observar o 25 no final da url. Assim, percebemos que teremos como retorno o pokemon cujo número esta inserido no final. Mas queremos todos os pokemons, como podemos fazer? Que tal:
 
 https://pokeapi.co/api/v2/pokemon/1
 
@@ -51,8 +51,11 @@ https://pokeapi.co/api/v2/pokemon/2
 https://pokeapi.co/api/v2/pokemon/500
 
 Se você tem que repetir uma mesma linha de código 500 vezes, significa que tem algo errado no seu código, vamos fazer usando uma única linha com interpolação. Lembra quando no C vc fazia:
+
 `int idade = 23;
-printf("Tem %d anos de idade", idade);`? Pois bem, isso se chama interpolação, um valor substitui um simbolo dentro de uma string, é o que vamos usar para resolver nosso problema.
+printf("Tem %d anos de idade", idade);`?
+
+Pois bem, isso se chama interpolação, um valor substitui um simbolo dentro de uma string, é o que vamos usar para resolver nosso problema.
 
 Em javascript a interpolação é normalmente feita assim:
 
@@ -60,4 +63,10 @@ Em javascript a interpolação é normalmente feita assim:
 
 Repare que não são aspas que cercam a string, mas sim o sinal de crase.  Já a variável vai estar entre ${}. Você pode testar no seu código
 
-Agora, vamos usar da interpolação para chamar pokemons dinamicamente. Vá até a função getAPI e mude as aspas ao redor da url por crases, apague também o vinte cinco no final da requisição fetch e coloque ${num} no lugar. Agora, vá na chamada da função e mude o argumento para o número que você quiser. Salve e vá no console da página da web, repare que o pokemon mudou.
+Agora, vamos usar da interpolação para chamar pokemons dinamicamente. Vá até a função getAPI e mude as aspas ao redor da url por crases, apague também o vinte cinco no final da requisição fetch e coloque ${num} no lugar. Agora, vá na chamada da função e mude o argumento para o número que você quiser. Salve e vá no console da página da web, repare que o pokemon mudou. O resultado deve ser próximo desse:
+
+![image](https://user-images.githubusercontent.com/39773960/218583162-55592b0f-c159-4061-a07f-e9a1e980bcc8.png)
+
+Altere o argumento da chamada da função para obter pokemons direntes.
+
+
