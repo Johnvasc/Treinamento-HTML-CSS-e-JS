@@ -3,7 +3,7 @@
 ## Boas-vindas!
 
   Olá, seja bem-vindo a primeira lição! Essa vai ser uma modesta introdução com dicas para começar bem!
-  Primeiramente, vamos instalar alguns programas interessantes. O ambiente de desenvolvimento que eu usei foi o Visual Studio Code e é interessante que você use ele também,mas sinta-se livre para usar a IDE de sua escolha! O Visual Studio Code se mostra interessante por diversos motivos: é robusto e confiável, foi feito pela microsoft, e é a IDE (ambiente de desenvolvimento) mais utlizado para programação Web, oferece diversos atalhos e funcionalidades que vão ser utilizadas ao longo das lições.
+  Primeiramente, vamos instalar alguns programas interessantes. O ambiente de desenvolvimento que eu usei foi o Visual Studio Code e é interessante que você use ele também, mas sinta-se livre para usar a IDE de sua escolha! O Visual Studio Code se mostra interessante por diversos motivos: é robusto e confiável, foi feito pela microsoft, e é a IDE (ambiente de desenvolvimento) mais utilizada para programação Web, oferece diversos atalhos e funcionalidades que vão ser utilizadas ao longo das lições.
 
   O link do Visual Studio Code:
   https://code.visualstudio.com/
