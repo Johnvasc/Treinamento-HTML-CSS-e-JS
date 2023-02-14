@@ -12,8 +12,15 @@ Vamos inserir os nomes dos pokemons em nossas divs. Modifique essa linha de: `ne
 Agora vamos colocar a imagem do pokemon.
 1. Abaixo dessa última modificação que fez, acrescente: `const pkmnImg = document.createElement('img')` estamos criando uma tag img e salvando seu valor na const.
 2. Logo abaixo escreva: `pkmnImg.setAttribute('src', pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default'])`, estamos atribuindo o campo src a nossa tag img. Src é um campo que recebe o link da imagem que vai ser reproduzida. No HTML bruto você faria: `<img src = "https://www.enderecoDaImg.com">`.
-3. Essa parte `pokemon['sprites']['versions']['generation-v']['black-white']['animated']` pode ter ficado confusa, mas vamos destrinchá-la!
+3. Essa parte `pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default']` pode ter ficado confusa, mas vamos destrinchá-la!
 4. Apertando `F12` no navegador, podemos encontrar o campo sprites. Logo para acessá-lo no JS fazemos: `pokemon['sprites']`.
 5. Porém, repare no navegador que dentro dele existem vários campos, inclusive o campo versions, para acessar um campo dentro de outro, fazemos `json['1ºcampo']['Campo interno']`, se continuar abrindo os campois vai chegar em front_default, onde vai ter o nosso desejado link da imagem!
 
+![image](https://user-images.githubusercontent.com/39773960/218807382-62fc6644-ea60-4630-bdc4-5a7c14222b5a.png)
+
+
 Por fim, insira a linha `newDiv.appendChild(pkmnImg)` e atualize a página.
+
+## Desafio:
+
+Repare que nos links de imagem em _"animated"_ existem diversas opções de sprite. Coloque para seu site exibir os sprites shiny ao invés dos sprites normais. Faça isso modificando o caminho do src. Depois faça para a versão de costas. Por fim, retorne para a original ou shiny para ficar mais bonitinho.
