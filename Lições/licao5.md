@@ -1,10 +1,10 @@
 # Acessando a API com fetch
 ## Criando funções:
-Agora vamos criar uma função. Criar funções no JS é muito parecido com funções no C, contudo não precisamos especificar o tipo de retorno. Use a seguinte sinxate para criar função: `function nomeDaFunção(){}`. Crie uma função chamada createDex ou qualquer outro nome de sua escolha. Em seguida, coloque o código que gera as 25 divs dentro dessa função (pode ser que você tenha que usar a tecla tab para diretir a identação do código). Em seguida salve e observe a página na web (lembre de ativar o live server na parte inferior direita se você fechou o VScode).
+Agora vamos criar uma função. Criar funções no JS é muito parecido com funções no C, contudo não precisamos especificar o tipo de retorno. Use a seguinte sinxate para criar função: `function nomeDaFunção(){}`. Crie uma função chamada createDex ou qualquer outro nome de sua escolha. Em seguida, coloque o código que gera as 25 divs dentro dessa função (pode ser que você tenha que usar a tecla tab para adequar a identação do código). Em seguida salve e observe a página na web (lembre de ativar o live server na parte inferior direita se você fechou o VScode).
 Não foram criadas mais divs, não é? Isso porque uma função precisa ser chamada pelo menos uma vez para se executada. Vá ao final do seu javascript e coloque createDex() ou o nome da função que você usou. Salve e veja a página da web novamente.
 
 ## API e Fetch:
-Crie uma nova função acima da anterior. Chame ela de getApi ou algo que remeta a essa função. Também coloque um argumento dentro dos paranteses para representar um numero. Sua função vai ficar mais ou menos assim:
+Crie uma nova função acima da anterior. Chame ela de getApi ou algum outro titulo que remeta a esse propósito. Também coloque um argumento dentro dos paranteses para representar um numero. Sua função vai ficar mais ou menos assim:
 
 ![image](https://user-images.githubusercontent.com/39773960/218320259-3631e22a-0412-4fe4-bb5d-c8abe50108d3.png)
 
@@ -67,6 +67,6 @@ Agora, vamos usar da interpolação para chamar pokemons dinamicamente. Vá até
 
 ![image](https://user-images.githubusercontent.com/39773960/218583162-55592b0f-c159-4061-a07f-e9a1e980bcc8.png)
 
-Altere o argumento da chamada da função para obter pokemons direntes.
+Altere o argumento da chamada da função para obter pokemons diferentes.
 
 
