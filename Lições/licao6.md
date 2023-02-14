@@ -9,10 +9,11 @@ Voltando a página web, aperte `F12` e observe esse campo. Ele vai ter o nome do
 
 Vamos inserir os nomes dos pokemons em nossas divs. Modifique essa linha de: `newTitle.innerText = i+1` para `newTitle.innerText = pokemon['name']`. Salve o arquivo e observe a página na web.
 
-Agora vamos colocar a imagem do pokemon. Abaixo dessa última modificação que fez, acrescente: `const pkmnImg = document.createElement('img')` estamos criando uma tag img e adicionando dentro dessa variável. Logo abaixo escreva: `pkmnImg.setAttribute('src', pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default'])`, estamos atribuindo o campo src a nossa tag img. Src é um campo que recebe o link da imagem que vai ser reproduzida.
-
-Essa parte `pokemon['sprites']['versions']['generation-v']['black-white']['animated']` pode ter ficado confusa, mas vamos destrinchá-la!
-Apertando `F12` podemos encontrar o campo sprites, logo para acessá-lo fazemos `pokemon['sprites']`, porém, repare que dentro dele existem vários campos, inclusive o campo versions, para acessar um campo dentro de outro, fazemos `json['1ºcampo']['Campo interno']`, se continuar abrindo os campois vai chegar em front_default, onde vai ter o nosso desejado link da imagem!
+Agora vamos colocar a imagem do pokemon.
+1. Abaixo dessa última modificação que fez, acrescente: `const pkmnImg = document.createElement('img')` estamos criando uma tag img e salvando seu valor na const.
+2. Logo abaixo escreva: `pkmnImg.setAttribute('src', pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default'])`, estamos atribuindo o campo src a nossa tag img. Src é um campo que recebe o link da imagem que vai ser reproduzida. No HTML bruto você faria: `<img src = "https://www.enderecoDaImg.com">`.
+3. Essa parte `pokemon['sprites']['versions']['generation-v']['black-white']['animated']` pode ter ficado confusa, mas vamos destrinchá-la!
+4. Apertando `F12` no navegador, podemos encontrar o campo sprites. Logo para acessá-lo no JS fazemos: `pokemon['sprites']`.
+5. Porém, repare no navegador que dentro dele existem vários campos, inclusive o campo versions, para acessar um campo dentro de outro, fazemos `json['1ºcampo']['Campo interno']`, se continuar abrindo os campois vai chegar em front_default, onde vai ter o nosso desejado link da imagem!
 
 Por fim, insira a linha `newDiv.appendChild(pkmnImg)` e atualize a página.
-
