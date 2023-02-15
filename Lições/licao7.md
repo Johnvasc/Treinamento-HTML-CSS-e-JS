@@ -11,8 +11,9 @@ Agora iremos nos dedicar a fazer uma nova função para apagar todos os pokemons
 ```    
 for(let i = 0; i<childsLen; i++){
    mainContainer.removeChild(childDivs[0])
-} /// para i de 0 até o número de divs contendo pokemons, remove do mainContainer a primeira div ou div[0]. Veja que quando uma div é removida, outra cai para seu lugar.
+}
  ```
+para i de 0 até o número de divs contendo pokemons, remove do mainContainer a primeira div ou div[0]. Veja que quando uma div é removida, outra cai para seu lugar.
 
 ## Usando listeners
 
@@ -47,6 +48,36 @@ Lembre que o nosso objetivo com esses formulários é inserir um texto no input 
 ## Editando novamente a createDex:
 
 Agora nossa função tem um argumento e só vamos gerar pókemons de acordo com esse argumento. Apenas um if vai bastar.
-1. DENTRO do For coloque: `if(pkmn['types']['0']['type']['name']==type || type == 'all'){}`
+1. DENTRO do For coloque: `if(pokemon['types']['0']['type']['name']==type || type == 'all'){}` deixando a parte `const pokemon = await getApi(i+1)` de FORA e necessariamente ACIMA do if.
 2. Em seguida, pegue todo o código presente dentro do for e coloque dentro das chaves do if. Agora vamos entender esse if.
+3. Na primeira parte temos: `pokemon['types']['0']['type']['name']==type`, lembre-se que type é o argumento passado a nossa função, ou seja o texto que estava no input na hora que o botão foi clicado. Vamos entrar no if somente se esse campo  `['types']['0']['type']['name']` no nosso json pokemon tem mesmo valor de type. Repare também que pokemons tem dois tipos `['types']['0']` e `['types']['1']`, mas para fins de simplicidade, vamos usar apenas o primeiro.
+
+![image](https://user-images.githubusercontent.com/39773960/218917265-cfb7f1a8-e6d4-472c-8d42-8ae27cc5ec19.png)
+
+4. A parte ` || ` do if é o ou(or) lógico e vamos passar pelo if seja o primeiro ou o segundo argumento verdeiros. Quaisquer um dos dois já é suficiente.
+5. Finalizando, a parte `type == 'all'`. Neste caso, se o argumento da função for all, todos os pokemons serão exibidos.
+6. Como último ato de nosso projeto, procure pelo JS a chamada da função createDex() e a substitua por `createDex('all')` para a página carregar chamando todos os pokemons. Também elimine a chamada da função getApi, que pode ter sobrado pelo código.
+7. Salve o código e teste se os pokemons aparecem de acordo com o tipo digitado no input, por exemplo: 'bug', 'grass', 'water', 'all'.
+8. Assim, finalizamos nosso projeto. Espero que tenham apreciado e aprendido alguma coisa XD.
+
+## Desafio #1.
+Repare que quando filtramos um tipo de pokemon, a única maneira de ter todos de volta é colocando 'all' no input. Crie um novo botão chamado reiniciar que ao ser apertado exibe todos os pokemons novamente.
+
+## Desafio #2.
+Crie um terceiro botão chamado shinify. Ao clicar nesse botão, será exibido somente a versão shine dos pokemons, se clicado uma segunda vez, exibe os pokemons normais.
+
+## Projeto Extra #1.
+E que tal se desafiar um pouco mais? Crie um projeto usando a mesma API chamado pokemon versions. Nesse projeto, você vai ter um input e um botão. Ao usuário digitar o nome de um pokemon e clicar no botão, ele será exibido com suas várias versões ao longo dos jogos. Use a imagem guia:
+
+![image](https://user-images.githubusercontent.com/39773960/218919387-1bada7fb-21eb-4452-9bdf-536a549e7bee.png)
+
+## Projeto Extra #2.
+Crie um cronometro. Utiizando-se da `setInterval` do javascript, crie um cronometro do zero! Coloque as funcionalidades de reiniciar, pausar e registrar na tela um tempo. Siga a imagem guia ou personalize de seu jeito!
+
+![image](https://user-images.githubusercontent.com/39773960/218919929-cd0f60e3-0d28-41c1-9f3a-d2fafa0d9b01.png)
+
+## Projeto Extra #3.
+Afim de fazer requisições fetch? Use a API `https://api.jikan.moe/v4/anime?q=shingeki&sfw` para fazer uma página de pesquisa de seus animes favoritos XD. Siga a imagem guia ou deixe sua criatividade te guiar!
+
+![image](https://user-images.githubusercontent.com/39773960/218920554-7dd87a35-f874-4bbd-88db-8356a5eaec66.png)
 
